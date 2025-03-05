@@ -15,18 +15,18 @@
     - System: 32768
 
 .NOTES
-  Author          : [Charlemagne]
-  LinkedIn        : [https://linkedin.com/in/charlemagned/]
-  GitHub          : [https://github.com/charlemagne-ai]
-  Date Created    : [03-04-2025]
-  Last Modified   : [03-04-2025]
+  Author          : Charlemagne
+  LinkedIn        : https://linkedin.com/in/charlemagned/
+  GitHub          : https://github.com/charlemagne-ai
+  Date Created    : 03-04-2025
+  Last Modified   : 03-04-2025
   CVEs            : N/A
   Plugin IDs      : N/A
   STIG-ID         : WN10-AU-000500, WN10-AU-000505, WN10-AU-000510
 
 .TESTED ON
-  Date(s) Tested  : [03-04-2025]
-  Tested By       : [Charlemagne]
+  Date(s) Tested  : 03-04-2025
+  Tested By       : Charlemagne
   Systems Tested  : Windows 10 (Version 10.0.19045.5487)
 
 .USAGE
