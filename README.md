@@ -15,7 +15,7 @@ Welcome to my **Windows 10 STIG v3r2** remediation project! This repository docu
 
 ## Project Overview
 
-- **Purpose**: Demonstrate the practical process of scanning a Windows 10 system with Nessus, identifying STIG findings, remediating them with PowerShell or manual configuration, and verifying the result.
+- **Purpose**: Demonstrate the practical process of scanning a Windows 10 Azure VM with Nessus, identifying STIG findings, remediating them with PowerShell or manual configuration, and verifying the result.
 - **Scope**: Focus on the DISA Windows 10 STIG v3r2 controls.
 
 ## Top 10 STIG Remediations
