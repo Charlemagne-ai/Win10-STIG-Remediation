@@ -22,11 +22,18 @@ Welcome to my **Windows 10 STIG v3r2** remediation project! This repository docu
 
 This table briefly lists my top 10 priority controls (based on severity, exploitability, and minimal user disruption). Each links to a more detailed page in the `docs/` folder.
 
-| STIG ID(s)                    | Summary                                              | Link                                                         |
-|-------------------------------|------------------------------------------------------|--------------------------------------------------------------|
-| WN10-AU-000500/-000505/-000510| Increase event log sizes to meet STIG thresholds    | [Event Log Sizes](./docs/STIG-EventLogSizes.md)             |
-| WN10-00-000155                | Disable PowerShell 2.0                              | *(link to future doc)*                                       |
-| ...                           | ... (other items)                                   | ...                                                          |
+| STIG ID(s)                      | Summary                                                 | Link                                                         |
+|---------------------------------|---------------------------------------------------------|--------------------------------------------------------------|
+| WN10-AU-000500/-000505/-000510  | Increase event log sizes to meet STIG thresholds        | [Event Log Sizes](./docs/STIG-EventLogSizes.md)             |
+| WN10-00-000155                  | Disable Windows PowerShell 2.0                          | *(link to future doc)*                                       |
+| WN10-00-000031 / -000032        | Enable BitLocker with Pre-Boot PIN (≥6 digits)          | *(link to future doc)*                                       |
+| WN10-AC-000005 / -000010 / -000015 | Enforce account lockout policy (3 attempts, 15 min lock) | *(link to future doc)*                                    |
+| WN10-AC-000035 / -000040        | Require 14+ character passwords, enable complexity      | *(link to future doc)*                                       |
+| WN10-CC-000180 / -000185 / -000190 | Disable AutoPlay/AutoRun for all drives               | *(link to future doc)*                                       |
+| WN10-00-000145                  | Enable Data Execution Prevention (DEP) in “OptOut” mode | *(link to future doc)*                                       |
+| WN10-00-000150                  | Enable Structured Exception Handling Overwrite Protection (SEHOP) | *(link to future doc)*                       |
+| WN10-CC-000038                  | Disable WDigest authentication                          | *(link to future doc)*                                       |
+| WN10-AU-AdvancedAuditing        | Configure advanced auditing (process creation, credential validation, etc.) | *(link to future doc)*                |
 
 
 ## Remediation Workflow
