@@ -100,6 +100,30 @@ reg query HKLM\SOFTWARE\Policies\Microsoft\Windows\EventLog\Security /v MaxSize
 
 ---
 
+## 5. Rollback Instructions (If Needed)
+
+If you want to completely **remove** all policy-based event log size settings that were added, you have two options:
+
+1. **Delete the Entire `EventLog` Key**  
+   - **Only do this if** you are certain no other policy settings or subkeys were stored there.  
+   - In `regedit`:
+     1. Navigate to `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows`.
+     2. Right-click the `EventLog` folder and select **Delete**.
+     3. Confirm when prompted.  
+   - This will restore the system to the original state (where `EventLog` did not exist), causing Windows to revert to the defaults in `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\EventLog`.
+
+2. **Remove Only the Subkeys/Values**  
+   - If the `EventLog` key holds other settings you need to preserve, simply remove the subkeys for **Application**, **Security**, and **System**, or the `MaxSize` values:
+     ```powershell
+     # Example PowerShell snippet to remove just the MaxSize properties:
+     Remove-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\EventLog\Application" -Name "MaxSize" -ErrorAction SilentlyContinue
+     Remove-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\EventLog\Security"   -Name "MaxSize" -ErrorAction SilentlyContinue
+     Remove-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\EventLog\System"     -Name "MaxSize" -ErrorAction SilentlyContinue
+     ```
+   - This way, you only remove the pieces you created and keep any other policy subkeys intact.
+
+---
+
 ## 6. Final Results
 
 After applying the fix and rescanning, the system logs now meet or exceed the minimum STIG size. This ensures important audit events aren’t overwritten prematurely.
