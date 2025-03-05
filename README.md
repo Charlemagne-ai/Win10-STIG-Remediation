@@ -59,10 +59,16 @@ Below is the general workflow I use:
 
 ## Scripts Folder
 
-All PowerShell scripts are in the [`scripts/`](./scripts) folder. Each script is thoroughly commented with usage instructions.
+All PowerShell scripts are stored under [`scripts/`](./scripts). Each script references the relevant STIG ID(s) and includes usage instructions:
 
-- **Set-STIG-EventLogSizes-GPO.ps1**: Automates WN10-AU-000500, 505, 510 requirements for event logs.  
-- *(Add more scripts as you go.)*
+1. **[Set-STIG-EventLogSizes-GPO.ps1](./scripts/Set-STIG-EventLogSizes-GPO.ps1)**  
+   - Automates **WN10-AU-000500**, **-000505**, **-000510** to ensure event log sizes meet STIG thresholds.
+
+2. **[Disable-PowerShell2.ps1](./scripts/Disable-PowerShell2.ps1)**  
+   - Remediates **WN10-00-000155** by removing the legacy PowerShell 2.0 feature, preventing downgrade attacks and enabling advanced logging in modern PowerShell versions.
+
+*(Additional scripts will be listed here as I address more STIG items.)*
+
 
 ## Sub-Pages / Documentation
 
