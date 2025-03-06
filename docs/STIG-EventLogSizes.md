@@ -128,10 +128,6 @@ If you want to completely **remove** all policy-based event log size settings th
 
 After applying the fix and rescanning, the system logs now meet or exceed the minimum STIG size. This ensures important audit events aren’t overwritten prematurely.
 
----
-
-**End of Document**
-
 
 
 
