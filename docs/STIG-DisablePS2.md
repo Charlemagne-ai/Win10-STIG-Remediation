@@ -77,5 +77,3 @@ A reboot may be required to restore all components.
 - Your Nessus or STIG Viewer scan should now show this control as **Passed**.
 
 ---
-
-**End of Document**
