@@ -9,8 +9,8 @@
 
 .NOTES
   Author          : Charlemagne
-  LinkedIn        : [https://linkedin.com/in/charlemagned/]
-  GitHub          : [https://github.com/charlemagne-ai]
+  LinkedIn        : https://linkedin.com/in/charlemagned/
+  GitHub          : https://github.com/charlemagne-ai
   Date Created    : 03-05-2025
   Last Modified   : 03-05-2025
   CVEs            : N/A
