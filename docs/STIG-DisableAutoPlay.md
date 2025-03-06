@@ -129,17 +129,17 @@ Write-Host "AutoPlay/AutoRun disabled. Run 'gpupdate /force' or reboot to finali
 
 2. **Nessus / STIG Scan Pass**  
 
-  ![WN10-CC-000180-PASS](https://github.com/user-attachments/assets/762f1730-4279-4e17-9b9d-c1959aa60052)
+   ![WN10-CC-000180-PASS](https://github.com/user-attachments/assets/762f1730-4279-4e17-9b9d-c1959aa60052)
 
-  ![WN10-CC-000185-PASS](https://github.com/user-attachments/assets/2d7f71dd-b1e8-4ded-a4e6-6f62f9e2d178)
+   ![WN10-CC-000185-PASS](https://github.com/user-attachments/assets/2d7f71dd-b1e8-4ded-a4e6-6f62f9e2d178)
 
-  ![WN10-CC-000190-PASS](https://github.com/user-attachments/assets/56a79f6c-99ed-4663-b5ad-dcbc7620abb2)
+   ![WN10-CC-000190-PASS](https://github.com/user-attachments/assets/56a79f6c-99ed-4663-b5ad-dcbc7620abb2)
 
 
 
-> **Note**  
-> While configuring registry values via script is usually sufficient, some STIG scanning tools (including certain Nessus plugins) explicitly check whether the Local Group Policy Editor (gpedit.msc) has the relevant policies set to “Enabled” rather than “Not Configured.”  
-> Therefore, **if your scan still fails** despite the correct registry keys, **manually enabling** these settings in gpedit ensures both the registry and GPO state align with the scanner’s expectations.
+   > **Note**  
+   > While configuring registry values via script is usually sufficient, some STIG scanning tools (including certain Nessus plugins) explicitly check whether the Local Group Policy Editor (gpedit.msc) has the relevant policies set to “Enabled” rather than “Not Configured.”  
+   > Therefore, **if your scan still fails** despite the correct registry keys, **manually enabling** these settings in gpedit ensures both the registry and GPO state align with the scanner’s expectations.
 
 ---
 
