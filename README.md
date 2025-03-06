@@ -67,7 +67,13 @@ All PowerShell scripts are stored under [`scripts/`](./scripts). Each script ref
 2. **[Disable-PowerShell2.ps1](./scripts/Disable-PowerShell2.ps1)**  
    - Remediates **WN10-00-000155** by removing the legacy PowerShell 2.0 feature, preventing downgrade attacks and enabling advanced logging in modern PowerShell versions.
 
-*(Additional scripts will be listed here as I address more STIG items.)*
+3. **[Disable-WDigest.ps1](./scripts/Disable-WDigest.ps1)**  
+   - Addresses **WN10-CC-000038** by setting `UseLogonCredential=0` to prevent **plaintext password** storage in LSASS for the WDigest authentication protocol.
+
+4. **[Disable-AutoPlay.ps1](./scripts/Disable-AutoPlay.ps1)**  
+   - Remediates **WN10-CC-000180**, **-000185**, **-000190** by disabling **AutoPlay/AutoRun** for all drives and non-volume devices, ensuring no autorun commands can execute.
+
+*(Additional scripts will be listed here as we address more STIG items.)*
 
 
 ## Sub-Pages / Documentation
