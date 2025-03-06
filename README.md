@@ -32,7 +32,7 @@ This table briefly lists my top 10 priority controls (based on severity, exploit
 | WN10-CC-000180 / -000185 / -000190 | Disable AutoPlay/AutoRun for all drives               | *(link to future doc)*                                       |
 | WN10-00-000145                  | Enable Data Execution Prevention (DEP) in “OptOut” mode | *(link to future doc)*                                       |
 | WN10-00-000150                  | Enable Structured Exception Handling Overwrite Protection (SEHOP) | *(link to future doc)*                       |
-| WN10-CC-000038                  | Disable WDigest authentication                          | *(link to future doc)*                                       |
+| WN10-CC-000038                  | Disable WDigest authentication                          | [Disable WDigest](./docs/STIG-DisableWDigest.md)                                       |
 | WN10-AU-AdvancedAuditing        | Configure advanced auditing (process creation, credential validation, etc.) | *(link to future doc)*                |
 
 
