@@ -20,7 +20,7 @@
   STIG-ID         : WN10-AC-000005, WN10-AC-000010, WN10-AC-000015
 
 .TESTED ON
-  Date(s) Tested  : 03-06-2025
+  Date(s) Tested  : 03-08-2025
   Tested By       : Charlemagne
   Systems Tested  : Windows 10 (Version 10.0.19045.5487)
 
