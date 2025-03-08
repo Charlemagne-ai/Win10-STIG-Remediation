@@ -29,10 +29,10 @@ This table briefly lists my top 10 priority controls (based on severity, exploit
 | WN10-00-000031 / -000032        | Enable BitLocker with Pre-Boot PIN (≥6 digits)          | *(link to future doc)*                                       |
 | WN10-AC-000005 / -000010 / -000015 | Enforce account lockout policy (3 attempts, 15 min lock) | *[Account Lockout](./docs/STIG-AccountLockout.md)*                                    |
 | WN10-AC-000035 / -000040        | Require 14+ character passwords, enable complexity      | *(link to future doc)*                                       |
-| WN10-CC-000180 / -000185 / -000190 | Disable AutoPlay/AutoRun for all drives               | [Disable AutoPlay](./docs/STIG-DisableAutoPlay.md)                                       |
+| WN10-CC-000180 / -000185 / -000190 | Disable AutoPlay/AutoRun for all drives               | *[Disable AutoPlay](./docs/STIG-DisableAutoPlay.md)*                                       |
 | WN10-00-000145                  | Enable Data Execution Prevention (DEP) in “OptOut” mode | *(link to future doc)*                                       |
 | WN10-00-000150                  | Enable Structured Exception Handling Overwrite Protection (SEHOP) | *(link to future doc)*                       |
-| WN10-CC-000038                  | Disable WDigest authentication                          | [Disable WDigest](./docs/STIG-DisableWDigest.md)                                       |
+| WN10-CC-000038                  | Disable WDigest authentication                          | *[Disable WDigest](./docs/STIG-DisableWDigest.md)*                                       |
 | WN10-AU-AdvancedAuditing        | Configure advanced auditing (process creation, credential validation, etc.) | *(link to future doc)*                |
 
 
