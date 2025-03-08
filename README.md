@@ -24,10 +24,10 @@ This table briefly lists my top 10 priority controls (based on severity, exploit
 
 | STIG ID(s)                      | Summary                                                 | Link                                                         |
 |---------------------------------|---------------------------------------------------------|--------------------------------------------------------------|
-| WN10-AU-000500/-000505/-000510  | Increase event log sizes to meet STIG thresholds        | [Event Log Sizes](./docs/STIG-EventLogSizes.md)             |
-| WN10-00-000155                  | Disable Windows PowerShell 2.0                          | [Disable PS2](./docs/STIG-DisablePS2.md)                                       |
+| WN10-AU-000500/-000505/-000510  | Increase event log sizes to meet STIG thresholds        | *[Event Log Sizes](./docs/STIG-EventLogSizes.md)*             |
+| WN10-00-000155                  | Disable Windows PowerShell 2.0                          | *[Disable PS2](./docs/STIG-DisablePS2.md)*                                       |
 | WN10-00-000031 / -000032        | Enable BitLocker with Pre-Boot PIN (≥6 digits)          | *(link to future doc)*                                       |
-| WN10-AC-000005 / -000010 / -000015 | Enforce account lockout policy (3 attempts, 15 min lock) | *(link to future doc)*                                    |
+| WN10-AC-000005 / -000010 / -000015 | Enforce account lockout policy (3 attempts, 15 min lock) | *[Disable PS2](./docs/STIG-AccountLockout.md)*                                    |
 | WN10-AC-000035 / -000040        | Require 14+ character passwords, enable complexity      | *(link to future doc)*                                       |
 | WN10-CC-000180 / -000185 / -000190 | Disable AutoPlay/AutoRun for all drives               | [Disable AutoPlay](./docs/STIG-DisableAutoPlay.md)                                       |
 | WN10-00-000145                  | Enable Data Execution Prevention (DEP) in “OptOut” mode | *(link to future doc)*                                       |
