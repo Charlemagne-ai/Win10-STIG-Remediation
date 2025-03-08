@@ -68,10 +68,16 @@ All PowerShell scripts are stored under [`scripts/`](./scripts). Each script ref
    - Remediates **WN10-00-000155** by removing the legacy PowerShell 2.0 feature, preventing downgrade attacks and enabling advanced logging in modern PowerShell versions.
 
 3. **[Disable-WDigest.ps1](./scripts/Disable-WDigest.ps1)**  
-   - Addresses **WN10-CC-000038** by setting `UseLogonCredential=0` to prevent **plaintext password** storage in LSASS for the WDigest authentication protocol.
+   - Addresses **WN10-CC-000038** by setting `UseLogonCredential=0` to prevent plaintext password storage in LSASS for WDigest authentication.
 
 4. **[Disable-AutoPlay.ps1](./scripts/Disable-AutoPlay.ps1)**  
-   - Remediates **WN10-CC-000180**, **-000185**, **-000190** by disabling **AutoPlay/AutoRun** for all drives and non-volume devices, ensuring no autorun commands can execute.
+   - Remediates **WN10-CC-000180**, **-000185**, **-000190** by disabling AutoPlay/AutoRun for all drives and devices, preventing autorun commands from executing.
+
+5. **[Set-STIG-AccountLockout.ps1](./scripts/Set-STIG-AccountLockout.ps1)**  
+   - Enforces **WN10-AC-000005**, **-000010**, **-000015** by setting account lockout threshold (3 attempts), lockout duration (15 minutes), and reset counter (15 minutes).
+
+6. **[Set-STIG-PasswordComplexity.ps1](./scripts/Set-STIG-PasswordComplexity.ps1)**  
+   - Configures **WN10-AC-000035**, **-000040** to require passwords of ≥14 characters and enable password complexity rules.
 
 *(Additional scripts will be listed here as we address more STIG items.)*
 
