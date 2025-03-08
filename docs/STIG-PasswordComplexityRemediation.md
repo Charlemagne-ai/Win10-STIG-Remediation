@@ -48,7 +48,7 @@
 
 ## 4. Automated Remediation
 
-See [`scripts/Disable-AutoPlay.ps1`](../scripts/Set-STIG-PasswordComplexity.ps1).
+See [`scripts/Set-STIG-PasswordComplexity.ps1`](../scripts/Set-STIG-PasswordComplexity.ps1).
 
 ```powershell
 Write-Host "Enforcing minimum password length (≥14) and complexity..."
