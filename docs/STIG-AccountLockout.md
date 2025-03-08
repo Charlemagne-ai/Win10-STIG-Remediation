@@ -52,7 +52,7 @@
 
 ## 4. Automated Remediation (PowerShell Script)
 
-See [`scripts/Disable-AutoPlay.ps1`](../scripts/Set-STIG-AccountLockout.ps1).
+See [`scripts/Set-STIG-AccountLockout.ps1`](../scripts/Set-STIG-AccountLockout.ps1).
 
 ```powershell
 Write-Host "Configuring Account Lockout Policy (WN10-AC-000005, -000010, -000015)..." -ForegroundColor Cyan
