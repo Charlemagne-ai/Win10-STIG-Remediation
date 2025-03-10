@@ -21,7 +21,7 @@
     PowerShell Ver. : 5.1
 
 .USAGE
-    PS C:\\> .\\Set-DEPtoOptOut.ps1
+    PS C:\\> .\Set-DEP-OptOut.ps1
     (Must be run as Administrator)
 #>
 
