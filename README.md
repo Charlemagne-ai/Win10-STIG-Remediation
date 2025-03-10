@@ -80,7 +80,7 @@ All PowerShell scripts are stored under [`scripts/`](./scripts). Each script ref
 7. **[Disable-SecondaryLogon.ps1](./scripts/Disable-SecondaryLogon.ps1)**  
    - Implements **WN10-00-000175** by stopping and disabling the Secondary Logon service (seclogon), preventing privilege escalation scenarios.
 
-8. **[ConfigureDEP.ps1](./scripts/ConfigureDEP.ps1)**  
+8. **[Set-DEP-OptOut.ps1](./scripts/Set-DEP-OptOut.ps1)**  
    - Fulfills **WN10-00-000145** by setting Data Execution Prevention (DEP) to OptOut (or higher) using `bcdedit`.
 
 
