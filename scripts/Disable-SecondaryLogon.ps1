@@ -22,7 +22,7 @@
     PowerShell Ver. : 5.1
 
 .USAGE
-    PS C:\\> .\\Disable-SecondaryLogon.ps1
+    PS C:\\> .\Disable-SecondaryLogon.ps1
     (Must be run as Administrator)
 
 .NOTES
