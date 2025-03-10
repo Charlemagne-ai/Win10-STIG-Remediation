@@ -5,7 +5,7 @@ Welcome to my **Windows 10 STIG v3r2** remediation project! This repository docu
 ## Table of Contents
 
 1. [Project Overview](#project-overview)
-2. [Top 10 STIG Remediations](#top-10-stig-remediations)
+2. [High-Priority STIG Controls](#high-priority-stig-controls)
 3. [Remediation Workflow](#remediation-workflow)
 4. [Scripts Folder](#scripts-folder)
 5. [Sub-Pages / Documentation](#sub-pages--documentation)
@@ -18,20 +18,18 @@ Welcome to my **Windows 10 STIG v3r2** remediation project! This repository docu
 - **Purpose**: Demonstrate the practical process of scanning a Windows 10 Azure VM with Nessus, identifying STIG findings, remediating them with PowerShell or manual configuration, and verifying the result.
 - **Scope**: Focus on the DISA Windows 10 STIG v3r2 controls.
 
-## Top 10 STIG Remediations
+## High-Priority STIG Controls
 
-This table briefly lists my top 10 priority controls (based on severity, exploitability, and minimal user disruption). Each links to a more detailed page in the `docs/` folder.
+This table briefly lists my top priority controls (based on severity, exploitability, and minimal user disruption). Each links to a more detailed page in the `docs/` folder.
 
 | STIG ID(s)                      | Summary                                                 | Link                                                         |
 |---------------------------------|---------------------------------------------------------|--------------------------------------------------------------|
-| WN10-AU-000500/-000505/-000510  | Increase event log sizes to meet STIG thresholds        | *[Event Log Sizes](./docs/STIG-EventLogSizes.md)*             |
+| WN10-AU-000500 / -000505 / -000510  | Increase event log sizes to meet STIG thresholds        | *[Event Log Sizes](./docs/STIG-EventLogSizes.md)*             |
 | WN10-00-000155                  | Disable Windows PowerShell 2.0                          | *[Disable PS2](./docs/STIG-DisablePS2.md)*                                       |
-| WN10-00-000031 / -000032        | Enable BitLocker with Pre-Boot PIN (≥6 digits)          | *(In Progress)*                                       |
 | WN10-AC-000005 / -000010 / -000015 | Enforce account lockout policy (3 attempts, 15 min lock) | *[Account Lockout](./docs/STIG-AccountLockout.md)*                                    |
-| WN10-AC-000035 / -000040        | Require 14+ character passwords, enable complexity      | *[Password Complexity](./docs/STIG-PasswordComplexityRemediation.md)*                                       |
+| WN10-AC-000035 / -000040        | Require 14+ character passwords and enable complexity      | *[Password Complexity](./docs/STIG-PasswordComplexityRemediation.md)*                                       |
 | WN10-CC-000180 / -000185 / -000190 | Disable AutoPlay/AutoRun for all drives               | *[Disable AutoPlay](./docs/STIG-DisableAutoPlay.md)*                                       |
-| WN10-00-000145                  | Enable Data Execution Prevention (DEP) in “OptOut” mode | *[Configure DEP](./docs/STIG-ConfigureDep.md)*                                       |
-| WN10-00-000150                  | Enable Structured Exception Handling Overwrite Protection (SEHOP) | *(In Progress)*                       |
+| WN10-00-000145                  | Enable Data Execution Prevention (DEP) in “OptOut” mode | *[Configure DEP](./docs/STIG-ConfigureDEP.md)*                                       |
 | WN10-CC-000038                  | Disable WDigest authentication                          | *[Disable WDigest](./docs/STIG-DisableWDigest.md)*                                       |
 | WN10-00-000175                  | Disable Secondary Logon Service                         | *[Disable Secondary Logon](./docs/STIG-DisableSecondaryLogon.md)*                |
 
@@ -79,7 +77,11 @@ All PowerShell scripts are stored under [`scripts/`](./scripts). Each script ref
 6. **[Set-STIG-PasswordComplexity.ps1](./scripts/Set-STIG-PasswordComplexity.ps1)**  
    - Configures **WN10-AC-000035**, **-000040** to require passwords of ≥14 characters and enable password complexity rules.
 
-*(Additional scripts will be listed here as we address more STIG items.)*
+7. **[Disable-SecondaryLogon.ps1](./scripts/Disable-SecondaryLogon.ps1)**  
+   - Implements **WN10-00-000175** by stopping and disabling the Secondary Logon service (seclogon), preventing privilege escalation scenarios.
+
+8. **[ConfigureDEP.ps1](./scripts/ConfigureDEP.ps1)**  
+   - Fulfills **WN10-00-000145** by setting Data Execution Prevention (DEP) to OptOut (or higher) using `bcdedit`.
 
 
 ## Sub-Pages / Documentation
