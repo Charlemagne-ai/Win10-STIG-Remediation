@@ -33,7 +33,7 @@ This table briefly lists my top 10 priority controls (based on severity, exploit
 | WN10-00-000145                  | Enable Data Execution Prevention (DEP) in “OptOut” mode | *(In Progress)*                                       |
 | WN10-00-000150                  | Enable Structured Exception Handling Overwrite Protection (SEHOP) | *(In Progress)*                       |
 | WN10-CC-000038                  | Disable WDigest authentication                          | *[Disable WDigest](./docs/STIG-DisableWDigest.md)*                                       |
-| WN10-AU-AdvancedAuditing        | Configure advanced auditing (process creation, credential validation, etc.) | *(In progress)*                |
+| WN10-00-000175                  | Disable Secondary Logon Service                         | *[Disable Secondary Logon](./docs/STIG-DisableSecondaryLogon.md)*                |
 
 
 ## Remediation Workflow
