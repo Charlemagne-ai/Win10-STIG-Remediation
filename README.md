@@ -30,7 +30,7 @@ This table briefly lists my top 10 priority controls (based on severity, exploit
 | WN10-AC-000005 / -000010 / -000015 | Enforce account lockout policy (3 attempts, 15 min lock) | *[Account Lockout](./docs/STIG-AccountLockout.md)*                                    |
 | WN10-AC-000035 / -000040        | Require 14+ character passwords, enable complexity      | *[Password Complexity](./docs/STIG-PasswordComplexityRemediation.md)*                                       |
 | WN10-CC-000180 / -000185 / -000190 | Disable AutoPlay/AutoRun for all drives               | *[Disable AutoPlay](./docs/STIG-DisableAutoPlay.md)*                                       |
-| WN10-00-000145                  | Enable Data Execution Prevention (DEP) in “OptOut” mode | *(In Progress)*                                       |
+| WN10-00-000145                  | Enable Data Execution Prevention (DEP) in “OptOut” mode | *[Configure DEP](./docs/STIG-ConfigureDep.md)*                                       |
 | WN10-00-000150                  | Enable Structured Exception Handling Overwrite Protection (SEHOP) | *(In Progress)*                       |
 | WN10-CC-000038                  | Disable WDigest authentication                          | *[Disable WDigest](./docs/STIG-DisableWDigest.md)*                                       |
 | WN10-00-000175                  | Disable Secondary Logon Service                         | *[Disable Secondary Logon](./docs/STIG-DisableSecondaryLogon.md)*                |
