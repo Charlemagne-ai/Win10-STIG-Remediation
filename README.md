@@ -117,10 +117,19 @@ This screenshot shows the updated scan results:
 ![STIG-final-results](https://github.com/user-attachments/assets/354360a0-255b-48cc-997f-16cac2a6defb)
 *Figure: Nessus scan indicating 122 remaining items.*
 
-I will continue to remediate the remaining findings in future cycles.
+---
 
+## Post-Remediation Testing
 
+After each STIG remediation, it is important to perform basic operational checks:
+- Verify event logs for errors or warnings.
+- Test critical applications and workflows to ensure no disruptions.
+- Monitor for any unexpected system behavior or compatibility issues.
+- If a service or feature fails, consider temporarily rolling back that specific STIG setting or create an exception per organizational policy.
 
+## Ongoing Vulnerability Management (Maintenance Mode)
+
+With the major vulnerabilities addressed, I will continue scanning regularly, applying patches, and reviewing STIG updates. This approach ensures new risks are caught early and the environment remains secure over time.
 
 ---
 
