@@ -84,8 +84,8 @@ Write-Output "Secondary Logon (seclogon) is now fully disabled."
    ---
 
 4. **Nessus / STIG Scan Pass**:
-   - Confirm **WN10-00-000175** now pass.
-     ![disable-secondary-logon-pass](https://github.com/user-attachments/assets/279a62e2-b128-48c6-abbe-8810fc6cc912)
+   
+   ![disable-secondary-logon-pass](https://github.com/user-attachments/assets/279a62e2-b128-48c6-abbe-8810fc6cc912)
 
 ---
 
