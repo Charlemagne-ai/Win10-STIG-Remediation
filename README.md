@@ -106,6 +106,21 @@ Below is a snippet or screenshot of my baseline Nessus scan showing various fail
 For the original Nessus scan results (showing the baseline STIG failures), see:
 [Baseline-STIG-Scan.pdf](./reports/Baseline-STIG-Scan.pdf)
 
+---
+
+## Final Results
+
+After applying all STIG remediations, I re-ran my Nessus scan. Initially, there were **137** failed checks, and now there are **122**, resulting in **15** items resolved.
+
+This screenshot shows the updated scan results:
+
+![STIG-final-results](https://github.com/user-attachments/assets/354360a0-255b-48cc-997f-16cac2a6defb)
+*Figure: Nessus scan indicating 122 remaining items.*
+
+I will continue to remediate the remaining findings in future cycles.
+
+
+
 
 ---
 
