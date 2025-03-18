@@ -51,6 +51,7 @@ Configure these settings:
   - **Authentication Method:** Password
   - **Username:** Your VM username
   - **Password:** Your VM password (**IMPORTANT:** ensure accuracy)
+  - Scan-wide Credential Type Settings: Enable all
 
 ![Enter Credentials](https://github.com/user-attachments/assets/138d7ca5-7bfe-4be2-967b-ab86ace0708d)
 
@@ -108,6 +109,9 @@ Configure these settings:
 ---
 
 ## 8. View Scan Results
+
+![Screenshot 2025-03-17 at 6 39 57 PM](https://github.com/user-attachments/assets/4733ac47-06c0-493b-9fda-30597de28acd)
+
 
 - Navigate to the completed scan's **Audits** tab to view results.
 - **Note:** Initial numbers may differ based on previous remediations.
